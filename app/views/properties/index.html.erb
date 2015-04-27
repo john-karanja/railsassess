@@ -1,0 +1,12 @@
+<h1>Properties</h1>
+
+
+<% @property.each do |property| %>
+	<div class="property">
+		<h2><%= link_to property.nameofproperty, property.nameofproperty %></h2>
+		<p><%= property.details %></p>ew
+		
+	</div>
+	<%  end %>
+
+	<p><%= link_to "Add a property", new_property_path %></p>
